@@ -9,33 +9,36 @@
 </head>
 <body>
     <main>
-        <form action="" class="formulario">
+        <form action="" name="formCadastro" class="formulario" onsubmit="return validaformulario()">
             <span>Crie sua Conta</span>
             <div id="login">
                 <label class="label_login">
-                    <input type="text">
+                    <input type="text" name="usuario">
                     <span>Nome de Usuário</span>
                 </label>
                 <label class="label_login">
-                    <input type="password">
+                    <input type="password" name="senha">
                     <span>Senha</span>
                 </label>
                 <label class="label_login">
-                    <input type="password">
+                    <input type="password" name="confirmarSenha">
                     <span>Confirmar senha</span>
                 </label>
                 <label class="label_login">
-                    <input type="email">
+                    <input type="email" name="email">
                     <span>E-mail</span>
                 </label>
             </div>
             <label class="check-box">
-                <input type="checkbox">
+                <input type="checkbox" name="checkBox">
                 <span class="checkmark"></span>
                 Enviar e-mails promocionais
             </label>
             <input type="submit" value="Cadastrar">
         </form>
     </main>
+
+    <script src="formulario-simples.js"></script>
+    
 </body>
 </html>
