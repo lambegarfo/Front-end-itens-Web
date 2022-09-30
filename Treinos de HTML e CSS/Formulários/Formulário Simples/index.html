@@ -10,13 +10,31 @@
 <body>
     <main>
         <form action="" class="formulario">
-            <input type="text" id="input1">
-                <label for="input1">Usuário</label>
-            <input type="password" id="input2">
-                <label for="input2">Senha</label>
-            <input type="checkbox" id="input3">
-                <label for="input3">Lembrar Usuário</label>
-            <input type="submit" value="Enviar">
+            <span>Crie sua Conta</span>
+            <div id="login">
+                <label class="label_login">
+                    <input type="text">
+                    <span>Nome de Usuário</span>
+                </label>
+                <label class="label_login">
+                    <input type="password">
+                    <span>Senha</span>
+                </label>
+                <label class="label_login">
+                    <input type="password">
+                    <span>Confirmar senha</span>
+                </label>
+                <label class="label_login">
+                    <input type="email">
+                    <span>E-mail</span>
+                </label>
+            </div>
+            <label class="check-box">
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                Enviar e-mails promocionais
+            </label>
+            <input type="submit" value="Cadastrar">
         </form>
     </main>
 </body>
