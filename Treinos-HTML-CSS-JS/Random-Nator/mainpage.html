@@ -21,7 +21,7 @@
     <main>
         <section class="headGerador">
             <label for="inputGeradores">Selecione o que quer gerar:</label>
-                <select name="inputGeradores" id="inputGeradores">
+                <select name="inputGeradores" id="inputGeradores" onchange="updateSelector()">
                     <option value="None">Selecione seu gerador</option>
                     <option value="Senha">Senha</option>
                     <option value="Nome">Nome</option>
@@ -40,5 +40,7 @@
     <footer>
         Desenvolvido por Ferreira.
     </footer>
+
+    <script src="geradores.js"></script>
 </body>
 </html>
