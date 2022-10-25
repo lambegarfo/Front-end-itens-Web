@@ -33,7 +33,18 @@
         </section>
         <section id="gerador">
             <article class="areaGerador">
-                ÁREA DO GERADOR
+                <form id="inputSenha">
+                    <label for="lengthSenha">Tamanho da Senha</label>
+                    <input type="range" id="lengthSenha" min="4" max="15" step="1" value="5">
+
+                    <label for="symbolSenha">Incluir símbolos e caracteres especiais</label>
+                    <input type="checkbox" id="symbolSenha">
+
+                    <input type="submit" onclick="gerarSenha()" value="Gerar Senha">
+                </form>
+                <article id="geradorSenha">
+
+                </article>
             </article>
         </section>
     </main>
