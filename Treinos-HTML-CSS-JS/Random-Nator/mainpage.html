@@ -11,7 +11,7 @@
     <header>
         <div class="titulo">
             <h1>
-                RANDOM-NATOR
+                <a href="mainpage.html">RANDOM-NATOR</a>
             </h1>
             <h2>
                 GERADOR ALEATÓRIO DE <del class="almost">QUASE</del> QUALQUER COISA.
@@ -20,38 +20,20 @@
     </header>
     <main>
         <section class="headGerador">
-            <label for="inputGeradores">Selecione o que quer gerar:</label>
-                <select name="inputGeradores" id="inputGeradores" onchange="updateSelector()">
-                    <option value="None">Selecione seu gerador</option>
-                    <option value="Senha">Senha</option>
-                    <option value="Nome">Nome</option>
-                    <option value="Cor">Cor</option>
-                    <option value="Numero">Número</option>
-                    <option value="Letra">Letra</option>
-                    <option value="Tema">Tema</option>
-                </select>
-        </section>
-        <section id="gerador">
-            <article class="areaGerador">
-                <form id="inputSenha">
-                    <label for="lengthSenha">Tamanho da Senha</label>
-                    <input type="range" id="lengthSenha" min="4" max="15" step="1" value="5">
-
-                    <label for="symbolSenha">Incluir símbolos e caracteres especiais</label>
-                    <input type="checkbox" id="symbolSenha">
-
-                    <input type="submit" onclick="gerarSenha()" value="Gerar Senha">
-                </form>
-                <article id="geradorSenha">
-
-                </article>
-            </article>
+            <span for="inputGeradores">Selecione o que quer gerar:</span>
+            <div id="inputGeradores">
+                <a href="pages/Senha/Senha.html" target="_blank">Senha</a>
+                <a href="#">Nome</a>
+                <a href="#">Cor</a>
+                <a href="#">Número</a>
+                <a href="#">Letra</a>
+                <a href="#">Tema</a>
+            </div>
         </section>
     </main>
     <footer>
         Desenvolvido por Ferreira.
     </footer>
-
     <script src="geradores.js"></script>
 </body>
 </html>

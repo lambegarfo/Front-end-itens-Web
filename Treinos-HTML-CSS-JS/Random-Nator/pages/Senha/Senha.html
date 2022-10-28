@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RANDOM-NATOR</title>
+    <link rel="stylesheet" href="senhaStyle.css">
+</head>
+<body>
+    <header>
+        <div class="titulo">
+            <h1>
+                <a href="/Treinos-HTML-CSS-JS/Random-Nator/mainpage.html">RANDOM-NATOR</a>
+            </h1>
+            <h2>
+                GERADOR ALEATÓRIO DE <del class="almost">QUASE</del> QUALQUER COISA.
+            </h2>
+        </div>
+    </header>
+    <main>
+        <section id="gerador">
+            <article class="areaGerador">
+                <form id="inputSenha">
+                    <label for="lengthSenha">Tamanho da Senha</label>
+                    <input type="range" id="lengthSenha" min="4" max="20" step="1" value="10">
+                    <label for="symbolSenha">Incluir símbolos e caracteres especiais</label>
+                    <input type="checkbox" id="symbolSenha">
+                    <input type="button" onclick="gerarSenha()" value="Gerar Senha">
+                </form>
+                <article id="geradorSenha">
+                    <span class="novaSenha"></span>
+                    <button class="copiarSenha" onclick="copiaSenha()">Copiar Senha</button>
+                </article>
+            </article>
+        </section>
+    </main>
+    <footer>
+        Desenvolvido por Ferreira.
+    </footer>
+    <script src="gerarSenha.js"></script>
+</body>
+</html>
