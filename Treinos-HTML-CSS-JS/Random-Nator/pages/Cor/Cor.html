@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RANDOM-NATOR</title>
-    <link rel="stylesheet" href="senhaStyle.css">
+    <link rel="stylesheet" href="../Senha/senhaStyle.css">
 </head>
 <body>
     <header>
@@ -21,12 +21,18 @@
     <main>
         <section id="gerador">
             <article class="areaGerador">
-                
+                <form id="formCor">
+                    <input type="button" onclick="geraCor()" value="Gerar Cor" id="gerarCor">
+                    <input type="number" id="redValue" min="0" max="255" value="200">
+                    <input type="number" id="greenValue" min="0" max="255" value="150">
+                    <input type="number" id="blueValue" min="0" max="255" value="100">
+                </form>
             </article>
         </section>
     </main>
     <footer>
         Desenvolvido por Ferreira.
     </footer>
+    <script src="gerarCor.js"></script>
 </body>
 </html>

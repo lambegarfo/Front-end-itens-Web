@@ -60,6 +60,7 @@ main{
     align-items: center;
     height: fit-content;
     padding: 20px;
+    width: 100%;
 }
 
 .headGerador > span{
@@ -74,33 +75,34 @@ main{
 #inputGeradores{
     margin-top: 30px;
     padding: 25px;
-    min-width: 450px;
-    width: max-content;
-    min-height: 250px;
-    height: max-content;
+    min-width: fit-content;
+    width: 70%;
+    min-height: fit-content;
+    max-height: 60%;
+    height: 150px;
     border-radius: 5px;
     background-color: rgba(255, 230, 0, 0.918);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: flex-start;
-    align-content: flex-start;
+    align-items: center;
+    align-content: space-around;
 }
 
 #inputGeradores > a{
-    margin-right: 10px;
     margin-bottom: 15px;
     padding: .5em 5px;
     border-radius: 6px;
     font-family: sans-serif;
     font-weight: bold;
     text-decoration: none;
+    min-height: max-content;
     height: 60px;
-    min-width: 85px;
-    width: max-content;
+    min-width: max-content;
+    width: 80px;
     border: solid 1px black;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.5em;
     color: white;
     background-color: rgb(10, 15, 130);
     box-shadow: 1px 1px 4px rgba(92, 70, 13, 0.753);
