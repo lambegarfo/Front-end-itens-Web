@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RANDOM-NATOR</title>
-    <link rel="stylesheet" href="senhaStyle.css">
+    <link rel="stylesheet" href="/Treinos-HTML-CSS-JS/Random-Nator/mainpage.css">
+    <link rel="stylesheet" href="numeroStyles.css">
 </head>
 <body>
     <header>
@@ -21,12 +22,16 @@
     <main>
         <section id="gerador">
             <article class="areaGerador">
-                
+                <div id="numeroGerado">0</div>
+                <input type="text" value="0" id="inputMinimo">
+                <input type="text" value="100" id="inputMaximo">
+                <button id="geraNumero">Gerar Número</button>
             </article>
         </section>
     </main>
     <footer>
         Desenvolvido por Ferreira.
     </footer>
+    <script src="gerarNumero.js"></script>
 </body>
 </html>

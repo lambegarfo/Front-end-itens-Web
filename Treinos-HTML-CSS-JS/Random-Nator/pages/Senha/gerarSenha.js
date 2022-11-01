@@ -24,15 +24,19 @@ function gerarSenha(){
 
 async function copiaSenha(){
 
-    try {
+    var senhaCopiada = document.querySelector('.novaSenha');
 
-        var senhaCopiada = document.querySelector('.novaSenha');
-        await navigator.clipboard.writeText(senhaCopiada.textContent);
-        alert('Senha copiada com sucesso!');
+    if(senhaCopiada.textContent == '') {
+        alert('Não há senha para copiar.');
+    } else {
+        try {
 
-    } catch {
-        
-        alert('Erro ao copiar senha!');
+            await navigator.clipboard.writeText(senhaCopiada.textContent);
+            alert('Senha copiada com sucesso!');
+
+        } catch {
+            
+            alert('Erro ao copiar senha!');
+        }
     }
-
 }
