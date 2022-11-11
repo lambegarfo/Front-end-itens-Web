@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #010005, #190853);
+}
+
+header {
+    margin: 20px;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 8rem;
+    font-weight: 400;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+
+main {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 500px;
+    min-height: 70%;
+    height: fit-content;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.input{
+    text-align: center;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+
+span:first-child{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3rem;
+}
+
+#link {
+    padding: 3px 6px;
+    height: 2rem;
+    min-height: 35px;
+    width: 80%;
+    align-self: center;
+    margin: 10px;
+    border: 1px solid #aaf;
+    background-color: aliceblue;
+    outline: none;
+    border-radius: 5px;
+}
+
+#link:focus{
+    background-color: white;
+    box-shadow: 1px 1px 3px rgba(6, 2, 63, 0.250);
+    position: relative;
+    bottom: 1px;
+    right: 1px;
+}
+
+#btnGerar {
+    background-color: darkblue;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    font-weight: bolder;
+    align-self: center;
+    padding: 10px 14px;
+    margin: 10px 0;
+    width: fit-content;
+    font-size: 1.8rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    position: relative;
+}
+
+#btnGerar:hover {
+    top: 1px;
+}
+
+#btnGerar:active {
+    box-shadow: none;
+    left: 1px;
+}
+
+.qrName {
+    font-size: 4rem;
+    font-family: 'Bebas Neue', sans-serif;
+    margin: 10px;
+}
+
+
+.qrcode{
+    padding: 10px;
+    border-radius: 5px;
+    width: 400px;
+    height: 400px;
+    background-color: #010005;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
